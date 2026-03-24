@@ -29,7 +29,7 @@ export function createGallery(images) {
     )
     .join('');
 
-  galleryContainer.innerHTML = markup;
+  galleryContainer.insertAdjacentHTML('beforeend', markup);
   lightbox.refresh();
 }
 
@@ -48,5 +48,5 @@ export function showLoadMoreButton(){
   loadMoreBtn.classList.remove('hidden');
 }
 export function hideLoadMoreButton(){
-  loadMoreBtn.classList.add('hidden');
+  loadMoreBtn.classList.add('hidden')
 }
