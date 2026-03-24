@@ -127,3 +127,16 @@ body {
 .hidden {
   display: none;
 }
+.load-more{
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+padding: 8px 16px;
+width: 125px;
+height: 40px;
+margin: 32px auto;
+}
+.load-more:hover{
+  background: #6c8cff;
+}
