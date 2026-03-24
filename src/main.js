@@ -38,6 +38,7 @@ searchForm.addEventListener('submit', async (event) => {
     }
   } catch (error) {
     console.error(error);
+    iziToast.error({ message: 'Something went wrong. Please try again later.' });
   } finally {
     hideLoader();
   }
@@ -66,6 +67,7 @@ loadMoreBtn.addEventListener('click', async () => {
     }
   } catch (error) {
     console.error(error);
+    iziToast.error({ message: 'Failed to load more images.' });
   } finally {
     hideLoader();
   }
